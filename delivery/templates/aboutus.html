@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fooddelivery System</title>
+{% load static %}
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width,initial scale=1"> -->
+<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+<link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'fds.css' %}">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img src="{% static 'pic/logo.png' %}" alt="Foodie logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a>Services</a>
+					<ul>
+						<li><a href="/delivery">Delivery</a></li>
+						<li><a href="/FAQs">FAQs</a></li>
+					</ul>
+				</li>
+				<li><a href="/menu">Menu</a></li>
+				<li><a href="/aboutus" class="current_list">About Us</a></li>
+				<li><a href="/login">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="about_container">
+		<h1>ABOUT US</h1>
+		<p>Foodie's Home delivers your meal from your favourite resturant of your choice.
+		   You can compare the rate of food in different resturant. Foodie's Home delivers your meal from favourite resturant of your choice.
+		   The delivery charge is according to the distance of the delivery location from the resturant.</p>
+		   <p>You can also make online payment.Your precious time is saved and your quality time with your family is achieved if you have access to food delivery.
+		   It is very easy and convenient to order food from Foodie's Home.We provide both telecommunication and online food ordering facility. You can order food using our website or call us to place your order.
+		   For more information about placing orders visit our order page.
+		   Our company promotes healthy and quality products for your well-being. You can order food for delivery that fall under Nepali cuisine like Momos to foods that fall under Italian Cuisine like pizza from us and we guarantee the quality of our food.
+           Remember us in your times of need and we will deliver your  favorite dishes at your place.
+		</p>
+		</div>
+	<footer>
+		<div id="contact">
+			<label>Contact Us</label>
+			<ul>
+				<li>9837353256</li>
+				<li>9803982575</li>
+				<li>foodie@gmail.com</li>
+			</ul>
+		</div>
+		<div id="help">
+			<label>Help/FAQs</label>
+			<ul>
+				<li><a href="#">services</a></li>
+				<li><a href="#">support</a></li>
+				<li><a href="#">Terms & condition</a></li>
+			</ul>
+		</div>
+		<div id="info">
+			<label>Information</label>
+			<ul>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">learn more</a></li>
+				<li><a href="#">events	</a></li>
+			</ul>
+		</div>
+		<div id="social_media">
+			<ul>
+				<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#" target="blank"><i class=" fab fa-google-plus-g"></i></a></li>
+				<li><a href="#" target="blank"><i class="fab fa-youtube-square"></i></a></li>
+			</ul>
+		</div>
+		<div id="copyright"><p>&copyright2020 Foodie's Home. All Rights Reserved.</p></div>
+	</footer>
+<script src="https://kit.fontawesome.com/58841ea0e0.js" crossorigin="anonymous"></script>
+</body>
+</html>

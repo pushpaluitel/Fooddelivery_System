@@ -1,0 +1,23 @@
+{% extends "dashboard_layout.html" %}
+{% block content %}
+<table class="table">
+<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>PRICE</th>
+	<th>IMAGE</th>
+	<th>ACTION</th>
+</tr>
+{% for menu in menus %}
+<tr>
+	<td>{{ menu.M_id}}</td>
+	<td>{{menu.Food_Name}}</td>
+	<td>{{menu.Price}}</td>
+	{% load static %}
+	<td><img class="rounded" width="40" src="{% static '/pic/' %}{{menu.Image}}" /></td>
+	<td><a  href="/edit/{{user.user_id}}">edit</a>|<a href="/delete/{{menu.M_id}}">delete</a></td>
+</tr>
+
+{% endfor %}
+</table>
+{% endblock %}

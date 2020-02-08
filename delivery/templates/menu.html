@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fooddelivery System</title>
+{% load static %}
+<!-- <meta charset="UTF-8"> -->
+<!-- <meta name="viewport" content="width=device-width,initial scale=1"> -->
+<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+<link href="https://fonts.googleapis.com/css?family=Lobster|PT+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'fds.css' %}">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			<img src="{% static 'pic/logo.png' %}" alt="Foodie logo}">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a>Services</a>
+					<ul>
+						<li><a href="/order">Delivery</a></li>
+						<li><a href="/FAQs">FAQs</a></li>
+					</ul>
+				</li>
+					<li><a href="/menu" href="/index" class="current_list">Menu</a></li>
+					<li><a href="/aboutus">About Us</a></li>
+					<li><a href="/login">Sign Up</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="content">
+		<div>
+			<h1>Foodie's Home Menu</h1>
+			<p>We provide best quality food!</p></div>
+			<div id="menu_container">
+				<div class="food_image"><img src="{% static 'pic/momo.jpg' %} ">
+				</div>
+				<div class="food_name">MO:MO</div>
+				<div class="price">200</div>
+			</div>
+	</div>
+		
+	<footer>
+		<div id="contact">
+			<label>Contact Us</label>
+			<ul>
+				<li>9837353256</li>
+				<li>9803982575</li>
+				<li>foodie@gmail.com</li>
+			</ul>
+		</div>
+		<div id="help">
+			<label>Help/FAQs</label>
+			<ul>
+				<li><a href="#">services</a></li>
+				<li><a href="#">support</a></li>
+				<li><a href="#">Terms & condition</a></li>
+			</ul>
+		</div>
+		<div id="info">
+			<label>Information</label>
+			<ul>
+				<li><a href="#">about us</a></li>
+				<li><a href="#">learn more</a></li>
+				<li><a href="#">events	</a></li>
+			</ul>
+		</div>
+		<div id="social_media">
+			<ul>
+				<li><a href="#" target="blank"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#" target="blank"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#" target="blank"><i class=" fab fa-google-plus-g"></i></a></li>
+				<li><a href="#" target="blank"><i class="fab fa-youtube-square"></i></a></li>
+			</ul>
+		</div>
+		<div id="copyright"><p>Foodie's Home &copyright;2020</p></div>
+	</footer>
+<script src="https://kit.fontawesome.com/58841ea0e0.js" crossorigin="anonymous"></script>
+</body>
+</html>
